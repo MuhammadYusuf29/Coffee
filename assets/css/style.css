@@ -1,0 +1,507 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap'); */
+
+@import url(./media.css);
+
+@font-face {
+    font-family: "ClickerScript";
+    src: url(../fonts/Clicker_Script/ClickerScript-Regular.ttf);
+}
+@font-face {
+    font-family: "PlayfarirDisplay";
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 40px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: .5s;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: "ClickerScript";
+}
+
+header ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+header ul li a {
+    font-size: 16px;
+    font-family: "PlayfarirDisplay";
+}
+.burger {
+    display: none;
+    align-items: center; 
+    font-size: 25px;
+    cursor: pointer;
+}
+/* .close {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 25px;
+    cursor: pointer;
+} */
+.show {
+    right: 0;
+}
+nav,
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background: #f9c06a;
+    padding: 10px 15px;
+    border-radius: 25px;
+    /* box-shadow: 10px 12px 24px 10px rgba(237, 146, 9, 0.22); */
+}
+
+.btn {
+    color: #000;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero h3 {
+    font-size: 22px;
+    font-size:"ClickerScript";
+}
+
+.hero h1 {
+    font-family:  "ClickerScript";
+    font-weight: 100;
+    font-size: 220px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.dicover .col:nth-child(1) {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dicover h1 {
+    font-size: 54px;
+    color: #603809;
+}
+
+.dicover p {
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: "PlayfarirDisplay";
+    font-weight: 700;
+    color: #70707070;
+}
+
+.dicover .btn {
+    margin-top: 20px;
+}
+
+.enjoy h1 {
+    display: flex;
+    justify-content: center;
+    color: #603809;
+    font-family: "PlayfarirDisplay";
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.enjoy h3 {
+    display: flex;
+    justify-content: center;
+    color: #70707070;
+    font-family: "PlayfarirDisplay";
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.enjoy .row {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.enjoy .col {
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: #fff9f1;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.enjoy .col h4 {
+    color: #603809;
+    font-family: "PlayfarirDisplay";
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.enjoy .col h5 {
+    color: #1E1E1E;
+    font-family: "PlayfarirDisplay";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.enjoy .col h6 {
+    color: #603809;
+    font-family: "PlayfarirDisplay";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.enjoy .btn {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 15px;
+    width: 110px;
+}
+
+.why {
+    text-align: center;
+}
+
+.why h1 {
+    color: #603809;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.why h3 {
+    color: #70707070;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.why .row {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.why .col {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: #fff9f1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.why .col:hover {
+    background: #FFEED8;
+}
+
+.why .col h4 {
+    color: #603809;
+    font-family:"PlayfarirDisplay";
+    font-size: 28px;
+}
+
+.why .col p {
+    color: #707070;
+    text-align: center;
+    font-family: "PlayfarirDisplay";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.get-1 p {
+    color: #707070;
+    text-align: center;
+    font-family: "PlayfarirDisplay";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.get-1 span {
+    color: var(--coffee, #603809);
+    font-family: "PlayfarirDisplay";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.get-1 a {
+    color: #1E1E1E;
+    font-family: "PlayfarirDisplay";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.get-1 .btn {
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 48px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.get {
+    background-image: url(../img/11.jpg);
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.get::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.800000011920929;
+    background: var(--coffee, #603809);
+}
+
+.get .col h1 {
+    color: #FFF;
+    font-family: "PlayfarirDisplay";
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.get .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.get .col p {
+    color: #FFF;
+    font-family: "PlayfarirDisplay";
+    font-size: 20px;
+}
+
+.get .col .btn {
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+.our h1 {
+    color: #603809;
+    font-family: "PlayfarirDisplay";
+    font-size: 54px;
+}
+
+.our h2 {
+    color: #707070;
+    text-align: center;
+    font-family: "PlayfarirDisplay";
+}
+
+.our .col {
+    text-align: center;
+}
+#malades h1{
+    color: #603809;
+    font-family: "PlayfarirDisplay";
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+#malades p{
+    color: #707070;
+    text-align: center;
+    font-family: "PlayfarirDisplay";
+    margin-bottom: 80px;
+}
+#belgi {
+    font-family: "PlayfarirDisplay";
+    font-size: 220px;
+    line-height: 100px;
+    margin-left: 100px;
+}
+
+
+
+.text {
+    background-image: url("../img/11.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.800000011920929;
+    background: var(--coffee, #603809);
+}
+
+.text .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.text .col {
+    position: relative;
+}
+
+.text h1 {
+    color: #fff;
+    font-family: "PlayfarirDisplay";
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.text p {
+    color: #fff;
+    font-size: 20px;
+    font-family:"PlayfarirDisplay";
+    font-weight: 400;
+}
+
+.srch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.srch input {
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    padding: 15px;
+    font-size: 20px;
+    font-family: "PlayfarirDisplay";
+    margin-top: 60px;
+    width: 450px;
+    outline: none;
+    font-weight: 400;
+    color: orange;
+}
+
+.srch button {
+    padding: 16px;
+    font-size: 20px;
+    margin-top: 60px;
+    font-family:"PlayfarirDisplay";
+    border: none;
+    background: #f9c06a;
+    color: #000;
+    cursor: pointer;
+}
+
+.oxrigi {
+    background: url(../img/12.jpg), linear-gradient(#211201, #291704);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 0;
+}
+
+.oxrigi .col-4 p,
+.oxrigi .col-4 h1 {
+    margin-bottom: 30px;
+}
+
+.oxrigi .col-3 li,
+.col-2 li {
+    margin-bottom: 30px;
+}
+
+.oxrigi p {
+    color: #FFF;
+    font-family: "PlayfarirDisplay";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+.oxrigi .col-3 h1,
+.col-2 h1 {
+    color: #FFF;
+    font-family: "PlayfarirDisplay";
+    font-size: 26px;
+}
+
+.oxrigi .logo {
+    color: #FFF;
+    font-family:  "ClickerScript";
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.oxrigi li {
+    color: #FFF;
+    font-family: "PlayfarirDisplay";
+    font-size: 18px;
+}
+
